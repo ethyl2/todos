@@ -3,7 +3,9 @@ import TodoItem from './components/TodoItem';
 import './App.css';
 
 const TodoApp = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(
+    localStorage.getItem('isLoggedIn') || false
+  );
   const [user, setUser] = useState({ username: '', password: '' });
 
   const [newTodo, setNewTodo] = useState({
@@ -105,8 +107,10 @@ const TodoApp = () => {
     e.preventDefault();
     if (user.username === 'Heather' && user.password === 'fox6tree') {
       setIsLoggedIn(true);
+      localStorage.setItem('isLoggedIn', true);
     } else {
       setIsLoggedIn(false);
+      localStorage.setItem('isLoggedIn', false);
     }
   };
 

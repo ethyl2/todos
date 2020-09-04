@@ -142,7 +142,15 @@ const TodoApp = () => {
         <div className="main-box">
           <form onSubmit={handleSubmit}>
             <button type="button" onClick={toggleAllDone}>
-              {showAllDone ? '📤' : '📥'}
+              {showAllDone ? (
+                <span role="img" aria-label="Outbox Tray">
+                  📤
+                </span>
+              ) : (
+                <span role="img" aria-label="Inbox Tray">
+                  📥
+                </span>
+              )}
             </button>
             <input
               type="text"

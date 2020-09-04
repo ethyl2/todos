@@ -1,38 +1,150 @@
 .App {
   text-align: center;
 }
+@import url('https://fonts.googleapis.com/css2?family=Kufam&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* General Styles */
+
+body {
+  font-family: 'Kufam', 'sans-serif';
+  font-size: 1.4em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  text-align: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-box {
+  width: 50vw;
+  background: #f5f5f5;
+  margin: 0 auto;
+}
+
+/* Form Styles */
+
+form {
+  border: 1px solid black;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+
+input {
+  background: #f5f5f5;
+  width: 80%;
+  border: none;
+  outline: none;
+  padding: 0.5em;
+  font-size: 1em;
+}
+
+form button {
+  width: 20%;
+  background: black;
   color: white;
+  font-weight: bold;
+  border: none;
+  font-family: 'Kufam', 'sans-serif';
+  font-size: 0.8em;
 }
 
-.App-link {
-  color: #61dafb;
+form button:hover {
+  background: gray;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+form button[type='button'] {
+  background: #f5f5f5;
+  transition: all 0.2s ease-in-out;
+}
+
+form button[type='button']:hover {
+  font-size: 1.2em;
+}
+
+/* Item Styles */
+
+.todo-item {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  align-items: center;
+  border-bottom: 1px solid gray;
+  padding: 0.5em;
+}
+
+.delete-button {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.delete-button:hover {
+  font-size: 1.2em;
+}
+
+.todo-circle {
+  display: block;
+  text-align: center;
+  width: 1.5em;
+  height: 1.5em;
+  padding: 1em;
+  border: 1px solid gray;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  cursor: pointer;
+}
+
+.todo-circle:hover {
+  background: lightgray;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.not-completed {
+  text-decoration: none;
+}
+
+/* Styles Dealing with Display Options */
+
+.control-box {
+  display: flex;
+  font-size: 0.65em;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.display-options {
+  display: flex;
+  cursor: pointer;
+}
+
+.display-options p {
+  padding: 0.3em;
+}
+
+.display-options p:hover {
+  font-weight: bold;
+}
+
+.selected {
+  text-decoration: underline;
+}
+
+.not-selected {
+  text-decoration: none;
+}
+
+.clear-completed {
+  cursor: pointer;
+}
+
+.clear-completed:hover {
+  font-weight: bold;
+}
+
+/* Responsive Styling */
+
+@media (max-width: 600px) {
+  .main-box {
+    width: 90vw;
   }
 }

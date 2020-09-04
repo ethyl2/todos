@@ -1,6 +1,33 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Todo App Code Challenge
 
-## Available Scripts
+**My app on codepen**: https://codepen.io/ethyl2/pen/bGpovaX
+
+**The Task**: Create a todo app similar to this one: https://mrsung.github.io/vue-composition-api-ts-todo/
+
+    A few extra details:
+
+    - It does not need to store data when you refresh.
+
+    - Spend just enough time so we can see your thought process and how you choose to build it.
+
+    - Use codepen to build it.
+
+    - Make a login just so you can save your project
+
+    - It's totally up to you HOW you choose to write it. If you feel more comfortable in react or vue or even vanilla javascript that's completely up to you.
+
+---
+
+## How to run this app locally:
+
+1. Fork and clone this repository.
+2. In terminal, run `npm i`.
+3. In terminal, run `npm start`.
+4. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+---
+
+## Other Available Scripts
 
 In the project directory, you can run:
 

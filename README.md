@@ -2,6 +2,8 @@
 
 **My app on codepen**: https://codepen.io/ethyl2/pen/bGpovaX
 
+**My deployed app:** https://heather-todos.netlify.app/
+
 **The Task**: Create a todo app similar to this one: https://mrsung.github.io/vue-composition-api-ts-todo/
 
     A few extra details:
